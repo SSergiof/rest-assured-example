@@ -1,0 +1,183 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"required": ["coord","weather","base","main","visibility","wind","clouds","dt","sys","id","name","cod"],
+	"properties": {
+		"coord": {
+			"type": "object",
+			"required": ["lon","lat"],
+			"properties": {
+				"lon": {
+					"type": "number",
+					"default": 0.0,
+					"examples": [-0.13]
+				},
+				"lat": {
+					"type": "number",
+					"default": 0.0,
+					"examples": [51.51]
+				}
+			}
+		},
+		"weather": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": ["id","main","description","icon"],
+				"properties": {
+					"id": {
+						"type": "number",
+						"default": 0,
+						"examples": [300]
+					},
+					"main": {
+						"type": "string",
+						"default": "",
+						"examples": ["Drizzle"],
+						"pattern": "^(.*)$"
+					},
+					"description": {
+						"type": "string",
+						"default": "",
+						"examples": ["light intensity drizzle"],
+						"pattern": "^(.*)$"
+					},
+					"icon": {
+						"type": "string",
+						"default": "",
+						"examples": ["09d"],
+						"pattern": "^(.*)$"
+					}
+				}
+			}
+		},
+		"base": {
+			"type": "string",
+			"default": "",
+			"examples": ["stations"],
+			"pattern": "^(.*)$"
+		},
+		"main": {
+			"type": "object",
+			"required": ["temp","pressure","humidity","temp_min","temp_max"],
+			"properties": {
+				"temp": {
+					"type": "number",
+					"default": 0.0,
+					"examples": [280.32]
+				},
+				"pressure": {
+					"type": "number",
+					"default": 0,
+					"examples": [1012]
+				},
+				"humidity": {
+					"type": "number",
+					"default": 0,
+					"examples": [81]
+				},
+				"temp_min": {
+					"type": "number",
+					"default": 0.0,
+					"examples": [279.15]
+				},
+				"temp_max": {
+					"type": "number",
+					"default": 0.0,
+					"examples": [281.15]
+				}
+			}
+		},
+		"visibility": {
+			"type": "number",
+			"default": 0,
+			"examples": [10000]
+		},
+		"wind": {
+			"type": "object",
+			"required": ["speed","deg"],
+			"properties": {
+				"speed": {
+					"type": "number",
+					"default": 0.0,
+					"examples": [4.1]
+				},
+				"deg": {
+					"type": "number",
+					"default": 0,
+					"examples": [80]
+				}
+			}
+		},
+		"clouds": {
+			"type": "object",
+			"required": ["all"],
+			"properties": {
+				"all": {
+					"type": "number",
+					"default": 0,
+					"examples": [90]
+				}
+			}
+		},
+		"dt": {
+			"type": "number",
+			"default": 0,
+			"examples": [1485789600]
+		},
+		"sys": {
+			"type": "object",
+			"required": ["type","id","message","country","sunrise","sunset"
+			],
+			"properties": {
+				"type": {
+					"type": "number",
+					"default": 0,
+					"examples": [1]
+				},
+				"id": {
+					"type": "number",
+					"default": 0,
+					"examples": [5091]
+				},
+				"message": {
+					"type": "number",
+					"default": 0.0,
+					"examples": [0.0103]
+				},
+				"country": {
+					"type": "string",
+					"default": "",
+					"examples": ["GB"],
+					"pattern": "^(.*)$"
+				},
+				"sunrise": {
+					"type": "number",
+					"default": 0,
+					"examples": [1485762037]
+				},
+				"sunset": {
+					"type": "number",
+					"default": 0,
+					"examples": [1485794875]
+				}
+			}
+		},
+		"id": {
+			"type": "number",
+			"default": 0,
+			"examples": [2643743]
+		},
+		"name": {
+			"type": "string",
+			"default": "",
+			"examples": ["London"],
+			"pattern": "^(.*)$"
+		},
+		"cod": {
+			"type": "number",
+			"default": 0,
+			"examples": [200]
+		}
+	}
+}
