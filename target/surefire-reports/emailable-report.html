@@ -9,9 +9,9 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">rest-assured-example-TestSuite</th></tr>
-<tr><td><a href="#t0">getWeatherRequests</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,686</td><td></td><td></td></tr>
+<tr><td><a href="#t0">getWeatherRequests</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">2,927</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">rest-assured-example-TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">getWeatherRequests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">getWeatherRequests.GetWeatherByCityName</td><td><a href="#m0">testResponseSchemaWrong</a></td><td rowspan="1">1576015858256</td><td rowspan="1">14</td></tr><tr><th colspan="4">getWeatherRequests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">getWeatherRequests.GetWeatherByCityName</td><td><a href="#m1">testResponseBodyIsNotEmpty</a></td><td rowspan="1">1576015857171</td><td rowspan="1">145</td></tr><tr class="passedeven"><td><a href="#m2">testResponseCodeIs200</a></td><td rowspan="1">1576015857141</td><td rowspan="1">27</td></tr><tr class="passedeven"><td><a href="#m3">testResponseSchema</a></td><td rowspan="1">1576015857317</td><td rowspan="1">938</td></tr><tr class="passedeven"><td><a href="#m4">testResponseTime</a></td><td rowspan="1">1576015858273</td><td rowspan="1">12</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">rest-assured-example-TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">getWeatherRequests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">getWeatherRequests.GetWeatherByCityName</td><td><a href="#m0">testResponseSchemaWrong</a></td><td rowspan="1">1576016278118</td><td rowspan="1">801</td></tr><tr><th colspan="4">getWeatherRequests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">getWeatherRequests.GetWeatherByCityName</td><td><a href="#m1">testResponseBodyIsNotEmpty</a></td><td rowspan="1">1576016278118</td><td rowspan="1">161</td></tr><tr class="passedeven"><td><a href="#m2">testResponseCodeIs200</a></td><td rowspan="1">1576016278118</td><td rowspan="1">35</td></tr><tr class="passedeven"><td><a href="#m3">testResponseSchema</a></td><td rowspan="1">1576016278118</td><td rowspan="1">832</td></tr><tr class="passedeven"><td><a href="#m4">testResponseTime</a></td><td rowspan="1">1576016278118</td><td rowspan="1">38</td></tr></tbody>
 </table>
 <h2>getWeatherRequests</h2><h3 id="m0">getWeatherRequests.GetWeatherByCityName#testResponseSchemaWrong</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
 Response body doesn&apos;t match expectation.
@@ -48,6 +48,7 @@ error: object has missing required properties ([&quot;wrongProperty1&quot;,&quot
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
 	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:98)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
 	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
@@ -57,8 +58,10 @@ error: object has missing required properties ([&quot;wrongProperty1&quot;,&quot
 	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
 	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
 	at getWeatherRequests.GetWeatherByCityName.testResponseSchemaWrong(GetWeatherByCityName.java:85)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 42 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">getWeatherRequests.GetWeatherByCityName#testResponseBodyIsNotEmpty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">getWeatherRequests.GetWeatherByCityName#testResponseCodeIs200</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">getWeatherRequests.GetWeatherByCityName#testResponseSchema</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

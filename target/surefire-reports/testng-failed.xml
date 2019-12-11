@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [rest-assured-example-TestSuite]">
-  <test thread-count="5" name="getWeatherRequests(failed)">
+<suite thread-count="10" parallel="methods" name="Failed suite [rest-assured-example-TestSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="10" parallel="methods" name="getWeatherRequests(failed)" verbose="0">
     <classes>
       <class name="getWeatherRequests.GetWeatherByCityName">
         <methods>

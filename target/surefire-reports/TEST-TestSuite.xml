@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="1.865" tests="5" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="13.0.1+9"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/sergiof/eclipse-workspace/rest-assured-example"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="MX"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/sergiof/eclipse-workspace/rest-assured-example"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="13.0.1+9"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/65/yrwbrkfj1ml5j6xv4c829cbr0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.6.3/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/sergiof/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.6.3/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="57.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.15.1"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.3/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/sergiof"/>
+    <property name="user.timezone" value="America/Mexico_City"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="13"/>
+    <property name="user.name" value="sergiof"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.6.3/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="13"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -DdefaultSuiteFiles=testng.xml"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="13.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.6.3/libexec"/>
+    <property name="defaultSuiteFiles" value="testng.xml"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-10-15"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="testResponseCodeIs200" classname="getWeatherRequests.GetWeatherByCityName" time="0.036"/>
+  <testcase name="testResponseTime" classname="getWeatherRequests.GetWeatherByCityName" time="0.037"/>
+  <testcase name="testResponseBodyIsNotEmpty" classname="getWeatherRequests.GetWeatherByCityName" time="0.159"/>
+  <testcase name="testResponseSchemaWrong" classname="getWeatherRequests.GetWeatherByCityName" time="0.803">
+    <failure message="1 expectation failed.&#10;Response body doesn&apos;t match expectation.&#10;Expected: The content to match the given JSON schema.&#10;warning: the following keywords are unknown and will be ignored: [examples]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/Users/sergiof/eclipse-workspace/rest-assured-example/target/test-classes/json/schemas/city-weather-schema-wrong.json#&quot;,&quot;pointer&quot;:&quot;/properties/wrongProperty1&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;examples&quot;]&#10;warning: the following keywords are unknown and will be ignored: [examples]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/Users/sergiof/eclipse-workspace/rest-assured-example/target/test-classes/json/schemas/city-weather-schema-wrong.json#&quot;,&quot;pointer&quot;:&quot;/properties/wrongProperty2&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;examples&quot;]&#10;error: object has missing required properties ([&quot;wrongProperty1&quot;,&quot;wrongPropety2&quot;])&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/Users/sergiof/eclipse-workspace/rest-assured-example/target/test-classes/json/schemas/city-weather-schema-wrong.json#&quot;,&quot;pointer&quot;:&quot;&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;required&quot;&#10;    required: [&quot;wrongProperty1&quot;,&quot;wrongPropety2&quot;]&#10;    missing: [&quot;wrongProperty1&quot;,&quot;wrongPropety2&quot;]&#10;&#10;  Actual: {&quot;coord&quot;:{&quot;lon&quot;:-0.13,&quot;lat&quot;:51.51},&quot;weather&quot;:[{&quot;id&quot;:300,&quot;main&quot;:&quot;Drizzle&quot;,&quot;description&quot;:&quot;light intensity drizzle&quot;,&quot;icon&quot;:&quot;09d&quot;}],&quot;base&quot;:&quot;stations&quot;,&quot;main&quot;:{&quot;temp&quot;:280.32,&quot;pressure&quot;:1012,&quot;humidity&quot;:81,&quot;temp_min&quot;:279.15,&quot;temp_max&quot;:281.15},&quot;visibility&quot;:10000,&quot;wind&quot;:{&quot;speed&quot;:4.1,&quot;deg&quot;:80},&quot;clouds&quot;:{&quot;all&quot;:90},&quot;dt&quot;:1485789600,&quot;sys&quot;:{&quot;type&quot;:1,&quot;id&quot;:5091,&quot;message&quot;:0.0103,&quot;country&quot;:&quot;GB&quot;,&quot;sunrise&quot;:1485762037,&quot;sunset&quot;:1485794875},&quot;id&quot;:2643743,&quot;name&quot;:&quot;London&quot;,&quot;cod&quot;:200}&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [examples]
+    level: "warning"
+    schema: {"loadingURI":"file:/Users/sergiof/eclipse-workspace/rest-assured-example/target/test-classes/json/schemas/city-weather-schema-wrong.json#","pointer":"/properties/wrongProperty1"}
+    domain: "syntax"
+    ignored: ["examples"]
+warning: the following keywords are unknown and will be ignored: [examples]
+    level: "warning"
+    schema: {"loadingURI":"file:/Users/sergiof/eclipse-workspace/rest-assured-example/target/test-classes/json/schemas/city-weather-schema-wrong.json#","pointer":"/properties/wrongProperty2"}
+    domain: "syntax"
+    ignored: ["examples"]
+error: object has missing required properties (["wrongProperty1","wrongPropety2"])
+    level: "error"
+    schema: {"loadingURI":"file:/Users/sergiof/eclipse-workspace/rest-assured-example/target/test-classes/json/schemas/city-weather-schema-wrong.json#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["wrongProperty1","wrongPropety2"]
+    missing: ["wrongProperty1","wrongPropety2"]
+
+  Actual: {"coord":{"lon":-0.13,"lat":51.51},"weather":[{"id":300,"main":"Drizzle","description":"light intensity drizzle","icon":"09d"}],"base":"stations","main":{"temp":280.32,"pressure":1012,"humidity":81,"temp_min":279.15,"temp_max":281.15},"visibility":10000,"wind":{"speed":4.1,"deg":80},"clouds":{"all":90},"dt":1485789600,"sys":{"type":1,"id":5091,"message":0.0103,"country":"GB","sunrise":1485762037,"sunset":1485794875},"id":2643743,"name":"London","cod":200}
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:98)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at getWeatherRequests.GetWeatherByCityName.testResponseSchemaWrong(GetWeatherByCityName.java:85)
+</failure>
+    <system-err>Warning: Nashorn engine is planned to be removed from a future JDK release
+</system-err>
+  </testcase>
+  <testcase name="testResponseSchema" classname="getWeatherRequests.GetWeatherByCityName" time="0.83"/>
+</testsuite>
